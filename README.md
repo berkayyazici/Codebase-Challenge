@@ -5,7 +5,7 @@ Ekstra : Stored Procedure kullanılmıştır. 2 tarih arasında çıkışı yap�
 NuGet Packages : Microsoft.EntityFrameworkCore, Microsoft.EntityFrameworkCore.Tools, Microsoft.EntityFrameworkCore.SqlServer (5.0.17 versiyonunu kullandım 
 .NET 5.0 kullandığım için.)
 
-(Veritabanı scripti "script.sql" dosyasında oluşturulmuştur.)
+(Veritabanı scripti ve stored procedureler "CodebaseDbScript.sql" dosyasında oluşturulmuştur.)
 
 ## Proje Mimarisi
 - BLL(Business Logic Layer) : Product ve Customer servicelerinin olduğu class library (istenilen fonksiyonların gerçekleştirilmesi)
