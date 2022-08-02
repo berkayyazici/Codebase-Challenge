@@ -28,4 +28,4 @@ Daha sonra servicelerimi oluşturup, istenilen fonksiyonları interfaceler ile i
 UI kısmı için Microsoft'un Razor Pages teknolojisini kullandım. Oluşturulan textboxlar ve butonlar sayesinde girilen verileri istenilen fonksiyona parametre olarak gönderdim. 
 
 ## Projeyi Çalıştırmak
-Projeyi clonelayın. Visual Studio yardımıyla solutionı run edebilirsiniz.
+Projeyi clonelayıp Visual Studio yardımıyla solution'ı run edebilirsiniz.
