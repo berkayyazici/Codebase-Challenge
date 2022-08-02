@@ -1,9 +1,10 @@
 # Codebase Code Challenge
 
-Kullanılan Teknolojiler : ASP .Net Core MVC, MSSQL, Entity Framework, Katmanlı Mimari (layered architecture)
+- Kullanılan Teknolojiler : ASP .Net Core MVC, MSSQL, Entity Framework, Katmanlı Mimari (layered architecture)
 
-Ekstra : Stored Procedure kullanılmıştır. 2 tarih arasında çıkışı yapılan ürünlerin listesinin alındığı sayfa oluşturulmuştur.
-NuGet Packages : Microsoft.EntityFrameworkCore, Microsoft.EntityFrameworkCore.Tools, Microsoft.EntityFrameworkCore.SqlServer (5.0.17 versiyonunu kullandım 
+- Ekstra : Stored Procedure kullanılmıştır. 2 tarih arasında çıkışı yapılan ürünlerin listesinin alındığı sayfa oluşturulmuştur.
+
+- NuGet Packages : Microsoft.EntityFrameworkCore, Microsoft.EntityFrameworkCore.Tools, Microsoft.EntityFrameworkCore.SqlServer (5.0.17 versiyonunu kullandım 
 .NET 5.0 kullandığım için.)
 
 (Veritabanı scripti ve stored procedureler "CodebaseDbScript.sql" dosyasında oluşturulmuştur.)
