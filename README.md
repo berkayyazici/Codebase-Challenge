@@ -32,4 +32,4 @@ UI kısmı için Microsoft'un Razor Pages teknolojisini kullandım. Oluşturulan
 ## Projeyi Çalıştırmak
 Projeyi clonelayıp Visual Studio yardımıyla solution'ı run edebilirsiniz.
 
-Not : UI kısmı, CodebaseStudyCase
+Not : Projenin UI kısmı, "Program.cs" ve "Startup.cs" classları CodebaseStudyCase dosyası içinde bulunmaktadır.
