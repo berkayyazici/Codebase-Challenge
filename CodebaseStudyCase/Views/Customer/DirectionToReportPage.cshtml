@@ -1,0 +1,20 @@
+﻿@model CodebaseStudyCase.Models.DateTimeRange
+
+<div class="container" style="width:40%;margin-top:2%">
+
+    @using (Html.BeginForm("Report", "Customer", FormMethod.Post)){
+        
+        @Html.TextBoxFor(model=>model.StartTime, new {@class= "date", @placeholder = "Date 1 : dd.mm.yyyy"})
+        @*@Html.TextBoxFor(model=>model.StartTime, new {@class= "date", @placeholder = "Date 1 : dd.mm.yyyy hh:mm"})*@
+        <br>
+        <br>
+        @Html.TextBoxFor(model=>model.EndTime, new {@class= "date", @placeholder = "Date 2 : dd.mm.yyyy"})
+        @*@Html.TextBoxFor(model=>model.EndTime, new {@class= "date", @placeholder = "Date 2 : dd.mm.yyyy hh:mm"})
+          A more detailed (for classification) report can be created by entering the hour and minute information in the given format. 
+        *@
+        <br>
+        <br>
+        <input type="submit" value="Get Report" class="btn btn-block btn-primary" />
+    }
+
+</div>

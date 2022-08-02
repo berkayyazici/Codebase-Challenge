@@ -1,0 +1,16 @@
+﻿@*Main Page*@
+
+@{
+    ViewData["Title"] = "Home Page";
+}
+
+<div class="text-center">
+    <h1 class="display-4">CodeBase Challenge</h1>
+    <p>Berkay Yazıcı</p>
+
+</div>
+
+<input type="button" value="List Products" onclick="location.href='@Url.Action("ListAllProducts", "Product")'" />
+<br>
+<br>
+<input type="button" value="List Customers" onclick="location.href='@Url.Action("ListAllCustomers", "Customer")'" />

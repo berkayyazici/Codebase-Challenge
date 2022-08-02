@@ -1,0 +1,16 @@
+﻿@model CodebaseStudyCase.Models.Product
+
+<div class="container" style="width:40%;margin-top:2%">
+
+    @using (Html.BeginForm("AddNewProduct", "Product", FormMethod.Post)){
+        
+        @Html.TextBoxFor(model=>model.Name, new {@class= "form-control", @placeholder = "Product Name"})
+        <br />
+        @Html.TextBoxFor(model=>model.Price, new {@class= "form-control", @placeholder = "Product Price"})
+        <br />
+        @Html.TextBoxFor(model=>model.QuantityNumber, new {@class= "form-control", @placeholder = "Product Piece"})
+        <br />
+        <input type="submit" value="Add Product" class="btn btn-block btn-primary" />
+    }
+
+</div>

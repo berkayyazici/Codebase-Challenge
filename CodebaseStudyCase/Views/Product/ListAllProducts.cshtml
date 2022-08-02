@@ -1,0 +1,65 @@
+﻿@*Products List*@
+
+@{
+    ViewData["Title"] = "ListAllProducts";
+}
+
+<h1>PRODUCTS</h1>
+
+@model IEnumerable<CodebaseStudyCase.Models.Product>
+
+<table class="table">
+    <tr>
+        <th>
+            @Html.DisplayNameFor(model => model.Id)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.Name)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.Price)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.QuantityNumber)
+        </th>
+        <th></th>
+    </tr>
+
+@foreach (var item in Model) {
+    <tr>
+        <td>
+            @Html.DisplayFor(modelItem => item.Id)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.Name)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.Price)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.QuantityNumber)
+        </td>
+        <td>
+            @Html.ActionLink("Update", "UpdateProductPage", new { Id=@item.Id, Name=@item.Name, 
+                Price = @item.Price, QuantityNumber = @item.QuantityNumber }) |
+            @Html.ActionLink("Delete", "DeleteProduct", new { Id=@item.Id, Name=@item.Name, 
+                Price = @item.Price, QuantityNumber = @item.QuantityNumber }) |
+            @Html.ActionLink("Sell", "SellProductPage", new { Id=@item.Id, Name=@item.Name, 
+                Price = @item.Price, QuantityNumber = @item.QuantityNumber })
+        </td>
+    </tr>
+}
+
+</table>
+
+<br>
+
+<input type="button" value="Add a New Product" onclick="location.href='@Url.Action("AddNewProductPage", "Product")'" />
+
+<br>
+<br>
+<input type="button" value="Report" onclick="location.href='@Url.Action("DirectionToReportPage", "Customer")'" />
+
+
+
+

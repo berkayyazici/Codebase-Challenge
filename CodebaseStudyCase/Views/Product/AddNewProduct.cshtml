@@ -1,0 +1,7 @@
+﻿@if(ViewBag.Message != null)
+{
+	<script>
+		alert("@ViewBag.Message");
+		window.location.href = '@Url.Action("ListAllProducts", "Product")';
+	</script>
+}

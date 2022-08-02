@@ -1,0 +1,56 @@
+﻿@model CodebaseStudyCase.Models.ViewModel
+
+<div class="container" style="width:40%;margin-top:2%">
+
+    @using (Html.BeginForm("SellProductToCustomer", "Product", FormMethod.Post)){
+        <div class="form-group">
+         @Html.LabelFor(m => m.Product.ElementAt(1).Id, new { @class = "col-md-2 control-label" }) 
+         <div class="col-md-10">
+            @Html.TextBoxFor(m => m.Product.ElementAt(1).Id, new { @readonly = "readonly"}) 
+            @Html.ValidationMessageFor(m => m.Product.ElementAt(1).Id) 
+         </div>
+      </div>
+
+      <div class="form-group">
+         @Html.LabelFor(m => m.Product.ElementAt(1).Name, new { @class = "col-md-2 control-label" }) 
+         <div class="col-md-10"> 
+            @Html.TextBoxFor(m => m.Product.ElementAt(1).Name, new { @readonly = "readonly" }) 
+            @Html.ValidationMessageFor(m => m.Product.ElementAt(1).Name) 
+         </div>
+      </div>
+
+      <div class="form-group">
+         @Html.LabelFor(m => m.Product.ElementAt(1).Price, new { @class = "col-md-2 control-label" }) 
+         <div class="col-md-10"> 
+            @Html.TextBoxFor(m => m.Product.ElementAt(1).Price, new { @readonly = "readonly" }) 
+            @Html.ValidationMessageFor(m => m.Product.ElementAt(1).Price) 
+         </div>
+      </div>
+
+      <div class="form-group">
+         @Html.LabelFor(m => m.Product.ElementAt(1).QuantityNumber, new { @class = "col-md-2 control-label" }) 
+         <div class="col-md-10"> 
+            @Html.TextBoxFor(m => m.Product.ElementAt(1).QuantityNumber, new { @readonly = "readonly" }) 
+            @Html.ValidationMessageFor(m => m.Product.ElementAt(1).QuantityNumber) 
+         </div>
+      </div>
+
+      <div class="form-group">
+         @Html.LabelFor(m => m.Customer.Name, new { @class = "col-md-2 control-label" }) 
+         <div class="col-md-10"> 
+            @Html.TextBoxFor(m => m.Customer.Name, new { @class= "form-control" }) 
+            @Html.ValidationMessageFor(m => m.Customer.Name) 
+         </div>
+      </div>
+
+      <div class="form-group">
+         @Html.LabelFor(m => m.Customer.QuantityNumber, new { @class = "col-md-2 control-label" }) 
+         <div class="col-md-10"> 
+            @Html.TextBoxFor(m => m.Customer.QuantityNumber, new { @class= "form-control" }) 
+         </div>
+      </div>
+
+        <input type="submit" value="Sell Product" class="btn btn-block btn-primary" />
+    }
+
+</div>
