@@ -1,4 +1,4 @@
-# Codebase-ProductTracker
+# Codebase Code Challenge
 
 Kullanılan Teknolojiler : ASP .Net Core MVC, MSSQL, Entity Framework, Katmanlı Mimari (layered architecture)
 Ekstra : Stored Procedure kullanılmıştır. 2 tarih arasında çıkışı yapılan ürünlerin listesinin alındığı sayfa oluşturulmuştur.
